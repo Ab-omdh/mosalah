@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Home - student portfolio" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Home - Portfolio</title>
+</head>
+<body onload="initHome()">
+  <!-- Header / Nav -->
+ <header id="header" class="site-header">
+  <div class="header-inner container">
+    <div class="brand">
+      <a href="home.html"><h1><span>Omar's P</span>ortfolio</h1></a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <nav class="nav">
+      <ul class="navlist" id="navlist">
+        <li><a href="home.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Academic Results ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="year1.html">Year 1 Results</a></li>
+            <li><a href="year2.html">Year 2 Results</a></li>
+            <li><a href="year3.html">Year 3 Results</a></li>
+            <li><a href="year4.html">Year 4 Results</a></li>
+          </ul>
+        </li>
+
+        <li><a href="page1.html">Hobbies</a></li>
+        <li><a href="page2.html">Career Goals</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+  <main class="container">
+    <section class="hero-welcome">
+      <div class="hero-left">
+        <h2 id="greeting">Hello —</h2>
+        <h1 id="displayName"></h1>
+		<img src="img\VISA.JPG" alt="profile" class="profile-pic" /><br><br>
+        <p id="bio"></p>
+		<br>
+        <a class="cta" href="profile.html">View Profile</a>
+      </div>
+
+      <aside class="hero-right">
+        <!-- slideshow -->
+        <div class="slideshow" id="slideshow">
+          <button class="slide-btn prev" onclick="prevSlide()">❮</button>
+          <div class="slides-wrapper">
+            <img src="img\hero-bg.png" class="slide active" alt="slide1" />
+            <img src="img\img-11.jpg" class="slide" alt="slide2" />
+            <img src="img\img-12.jpg" class="slide" alt="slide3" />
+            <img src="img\img-10.jpg" class="slide" alt="slide4" />
+            <img src="img\img-1.png" class="slide" alt="slide5" />
+          </div>
+          <button class="slide-btn next" onclick="nextSlide()">❯</button>
+
+          <div class="dots" id="slideDots"></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Video explanation -->
+    <section class="video-section">
+      <h3>How to navigate this site</h3>
+      <video controls width="720" preload="metadata">
+        <source src="img\How to navigate.mp4" type="video/mp4" />
+        Your browser doesn't support the video tag.
+      </video>
+    </section>
+
+    <!-- Date/time -->
+    <section class="datetime">
+      <p>Current date & time: <span id="currentDateTime"></span></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Omar's portfolio — All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

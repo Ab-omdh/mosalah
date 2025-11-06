@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Student portfolio website - login" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Login - Portfolio</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><h1><span>Omar's P</span>ortfolio</h1></div>
+  </header>
+
+  <main class="login-page container">
+    <section class="login-card">
+      <h2>Welcome — Sign In</h2>
+      <form id="loginForm" onsubmit="return validateLogin(event)">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="At least 4 characters" />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="At least 6 characters" />
+
+        <div class="row-between">
+          <label class="checkbox">
+            <input type="checkbox" id="rememberMe" /> Remember Me
+          </label>
+          <button type="submit" class="btn">Login</button>
+        </div>
+
+        <p id="loginMsg" class="msg"></p>
+      </form>
+
+      <p class="hint">Use any username (≥4 chars) and password (≥6 chars).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Omar's Portfolio — All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Hobbies</title>
+</head>
+<body>
+  <header id="header" class="site-header">
+  <div class="header-inner container">
+    <div class="brand">
+      <a href="home.html"><h1><span>Omar's P</span>ortfolio</h1></a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <nav class="nav">
+      <ul class="navlist" id="navlist">
+        <li><a href="home.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Academic Results ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="year1.html">Year 1 Results</a></li>
+            <li><a href="year2.html">Year 2 Results</a></li>
+            <li><a href="year3.html">Year 3 Results</a></li>
+            <li><a href="year4.html">Year 4 Results</a></li>
+          </ul>
+        </li>
+
+        <li><a href="page1.html">Hobbies</a></li>
+        <li><a href="page2.html">Career Goals</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <h2>Hobbies & Interests</h2>
+    <p>Here are some of my hobbies and things I enjoy doing in my free time.</p>
+
+    <section class="hobby-section">
+      <div class="hobby-card">
+        <img src="img/img-1.png" alt="Reading" />
+        <h4>Reading Books</h4>
+        <p>Exploring different genres from fiction to technology guides, expanding knowledge and imagination.</p>
+      </div>
+      <div class="hobby-card">
+        <img src="img\pexels-pixabay-260024.jpg" alt="Gaming" />
+        <h4>Gaming</h4>
+        <p>Playing strategy and adventure games that challenge problem-solving and quick thinking skills.</p>
+      </div>
+      <div class="hobby-card">
+        <img src="img\pexels-daniel-shapiro-545348228-16634212.jpg" alt="Photography" />
+        <h4>Photography</h4>
+        <p>Capturing landscapes, nature, and memorable moments, turning everyday scenes into art.</p>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <h3>Related Video</h3>
+      <video controls>
+        <source src="img\3326930-hd_1280_720_24fps.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <a class="btn" href="home.html">Back to Home</a>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span>2025 Omar's portfolio — All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

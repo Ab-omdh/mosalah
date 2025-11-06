@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Profile - portfolio" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Profile</title>
+</head>
+<body onload="populateProfilePage()">
+  <header id="header" class="site-header">
+  <div class="header-inner container">
+    <div class="brand">
+      <a href="home.html"><h1><span>Omar's P</span>ortfolio</h1></a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <nav class="nav">
+      <ul class="navlist" id="navlist">
+        <li><a href="home.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Academic Results ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="year1.html">Year 1 Results</a></li>
+            <li><a href="year2.html">Year 2 Results</a></li>
+            <li><a href="year3.html">Year 3 Results</a></li>
+            <li><a href="year4.html">Year 4 Results</a></li>
+          </ul>
+        </li>
+
+        <li><a href="page1.html">Hobbies</a></li>
+        <li><a href="page2.html">Career Goals</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container profile-main">
+    <section class="profile-summary">
+      <img src="img\VISA.JPG" alt="profile" class="profile-pic" />
+      <div>
+        <h1 id="profileName">Student Name</h1>
+        <p id="profileBio">
+          Motivated and high-achieving student with a <span class="highlight">GPA of 3.8/4.0</span>,
+          consistently on the <span class="highlight">Dean’s List</span> for academic excellence.<br>
+          Active member of the <span class="highlight">Coding & Programming Society</span> and <span class="highlight">Data Science Club</span>, 
+          contributing to workshops and events.<br>
+          Completed projects such as <span class="highlight">“Student Attendance Management System”</span> and <span class="highlight">“Data Visualization Dashboard”</span>,<br>
+          demonstrating strong technical and problem-solving skills.<br>
+          Recipient of the <span class="highlight">Best Innovation Award 2024</span> and 
+          <span class="highlight">Leadership Excellence Certificate</span> for outstanding project work and community involvement.
+        </p>
+      </div>
+    </section>
+
+    <section class="results-table">
+      <h2>Academic Results - Summary</h2>
+      <table class="styled-table">
+        <thead>
+          <tr><th>Subject</th><th>Marks</th><th>Grade</th></tr>
+        </thead>
+        <tbody id="profileResults">
+          <!-- filled by JS -->
+        </tbody>
+      </table>
+
+      <p class="achievement">
+        I have consistently worked hard and achieved good results in my key modules.<br>
+        Example accomplishments: Dean's list, project awards, contributions to open-source etc.
+      </p><br>
+
+      <a class="btn" href="home.html">Back to Home</a>
+	  <a class="btn" href="year1.html">See My Full Academic Results </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Omar's portfolio — All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

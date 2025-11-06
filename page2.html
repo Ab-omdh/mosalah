@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Career Goals</title>
+</head>
+<body>
+  <header id="header" class="site-header">
+  <div class="header-inner container">
+    <div class="brand">
+      <a href="home.html"><h1><span>Omar's P</span>ortfolio</h1></a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <nav class="nav">
+      <ul class="navlist" id="navlist">
+        <li><a href="home.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Academic Results ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="year1.html">Year 1 Results</a></li>
+            <li><a href="year2.html">Year 2 Results</a></li>
+            <li><a href="year3.html">Year 3 Results</a></li>
+            <li><a href="year4.html">Year 4 Results</a></li>
+          </ul>
+        </li>
+
+        <li><a href="page1.html">Hobbies</a></li>
+        <li><a href="page2.html">Career Goals</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <h2>Career Goals & Projects</h2>
+    <p>Here are my short-term and long-term career ambitions as I grow academically and professionally.</p>
+
+    <!-- Career Goals Cards with Images -->
+    <section class="goals-gallery">
+      <div class="goal-card">
+        <img src="img\pexels-uraw-17615658.jpg" alt="Short Term Goals">
+        <h3>Short-Term Goals</h3>
+        <p>Complete my degree with excellent grades and start building real-world projects.</p>
+      </div>
+
+      <div class="goal-card">
+        <img src="img\pexels-googledeepmind-17483874.jpg" alt="Skill Development">
+        <h3>Skill Development</h3>
+        <p>Learn programming, data analysis, and AI technologies to become industry-ready.</p>
+      </div>
+
+      <div class="goal-card">
+        <img src="img\quality-guarantee-process-satisfaction-customers-600nw-2472325425.webp" alt="Certifications">
+        <h3>Certifications</h3>
+        <p>Get certified in cloud computing (AWS, Azure) and cybersecurity fundamentals.</p>
+      </div>
+
+      <div class="goal-card">
+        <img src="img\pexels-fauxels-3184306.jpg" alt="Professional Experience">
+        <h3>Professional Experience</h3>
+        <p>Gain internships and part-time roles to understand real workplace environments.</p>
+      </div>
+
+      <div class="goal-card">
+        <img src="img\pexels-kindelmedia-7688335.jpg" alt="Long Term Goals">
+        <h3>Long-Term Goals</h3>
+        <p>Start my own tech consultancy or become a lead engineer in a top company.</p>
+      </div>
+    </section>
+
+    <!-- Audio Section -->
+    <section class="career-audio">
+      <h3>Listen: My Project Pitch</h3>
+      <audio controls>
+        <source src="img\Choix-De-Vie-Remix_1.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <a class="btn" href="home.html">Back to Home</a>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span>2025 Omar's portfolio — All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

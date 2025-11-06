@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Year 4 results" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Year 4 Results</title>
+</head>
+<body onload="updateDateTime(); setInterval(updateDateTime,1000);">
+  <header id="header" class="site-header">
+  <div class="header-inner container">
+    <div class="brand">
+      <a href="home.html"><h1><span>Omar's P</span>ortfolio</h1></a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <nav class="nav">
+      <ul class="navlist" id="navlist">
+        <li><a href="home.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Academic Results ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="year1.html">Year 1 Results</a></li>
+            <li><a href="year2.html">Year 2 Results</a></li>
+            <li><a href="year3.html">Year 3 Results</a></li>
+            <li><a href="year4.html">Year 4 Results</a></li>
+          </ul>
+        </li>
+
+        <li><a href="page1.html">Hobbies</a></li>
+        <li><a href="page2.html">Career Goals</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container year-main">
+    <h2>Year 4 Results</h2>
+    <table class="styled-table">
+      <thead>
+        <tr><th>Subject</th><th>Marks</th><th>Grade</th></tr>
+      </thead>
+      <tbody id="year4Results">
+        <tr><td>BIT402 - ICT Project/Research </td><td>82</td><td>B</td></tr>
+        <tr><td>BIT405 - Information Technology Law </td><td>75</td><td>B</td></tr>
+        <tr><td>BIT442 - Information Systems and Society</td><td>70</td><td>B</td></tr>
+        <tr><td>BIT446 - Strategic Information Systems and Business Policy </td><td>90</td><td>A</td></tr>
+        <tr><td>BIT416 - Current Trends in ICT</td><td>78</td><td>B</td></tr>
+		<tr><td>BIT423 - ICT Project/ Research </td><td>70</td><td>B</td></tr>
+        <tr><td>BIT434 - Information Technology Security</td><td>90</td><td>A</td></tr>
+        <tr><td>BIT443 - System Administration (Linux)</td><td>78</td><td>B</td></tr>
+      </tbody>
+    </table>
+
+    <a class="btn" href="home.html">Back to Home</a>
+	<a class="btn" href="year3.html">Previous Year</a>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span>2025 Omar's portfolio — All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
